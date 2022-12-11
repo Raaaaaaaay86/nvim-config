@@ -11,5 +11,6 @@ vim.opt.smartindent = true
 
 vim.opt.wrap = false
 
-vim.keymap.set('n', '<C-p>', string.format(':Files %s<CR>', string.match(vim.fn.getcwd(),".*Projects/[%w_]*")))
+vim.keymap.set("n", "<C-p>", string.format(":Files %s<CR>", string.match(vim.fn.getcwd(),".*Projects/[%w_]*")))
+vim.keymap.set("n", "gD", "<cmd>:lua require('raylin.util').format()<CR>")
 
