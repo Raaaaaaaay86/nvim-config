@@ -74,10 +74,30 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  fzf = {
+  ["cmp-buffer"] = {
     loaded = true,
-    path = "C:\\Users\\ray.lin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fzf",
-    url = "https://github.com/junegunn/fzf"
+    path = "C:\\Users\\ray.lin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
+    url = "https://github.com/hrsh7th/cmp-buffer"
+  },
+  ["cmp-cmdline"] = {
+    loaded = true,
+    path = "C:\\Users\\ray.lin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-cmdline",
+    url = "https://github.com/hrsh7th/cmp-cmdline"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "C:\\Users\\ray.lin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "C:\\Users\\ray.lin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
+  },
+  ["cmp-vsnip"] = {
+    loaded = true,
+    path = "C:\\Users\\ray.lin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-vsnip",
+    url = "https://github.com/hrsh7th/cmp-vsnip"
   },
   ["fzf.vim"] = {
     loaded = true,
@@ -98,6 +118,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\ray.lin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nerdtree",
     url = "https://github.com/preservim/nerdtree"
+  },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "C:\\Users\\ray.lin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -123,6 +148,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\ray.lin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-go",
     url = "https://github.com/fatih/vim-go"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "C:\\Users\\ray.lin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-vsnip",
+    url = "https://github.com/hrsh7th/vim-vsnip"
   }
 }
 
