@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\ray.lin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox-material",
     url = "https://github.com/sainnhe/gruvbox-material"
   },
+  ["lsp_signature.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\ray.lin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp_signature.nvim",
+    url = "https://github.com/ray-x/lsp_signature.nvim"
+  },
   nerdtree = {
     loaded = true,
     path = "C:\\Users\\ray.lin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nerdtree",

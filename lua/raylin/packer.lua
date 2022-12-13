@@ -10,5 +10,6 @@ return require('packer').startup(function(use)
  	use 'junegunn/fzf.vim'
  	use 'preservim/nerdtree'
 	use 'neovim/nvim-lspconfig'
+	use 'ray-x/lsp_signature.nvim'
 end)
 

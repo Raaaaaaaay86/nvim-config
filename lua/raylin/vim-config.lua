@@ -22,6 +22,7 @@ vim.keymap.set("i", "<tab>", "<C-R>=v:lua.require('raylin.util').tab_complete()<
 vim.keymap.set("i", "<s-tab>", "<C-R>=v:lua.require('raylin.util').s_tab_complete()<CR>" ,{silent = true, noremap = true})
 vim.keymap.set('i', '<enter>', "<C-R>=v:lua.require('raylin.util').enter_key()<CR>" ,{silent = true, noremap = true})
 
+-- Syntax Highlight
 require('nvim-treesitter.configs').setup {
 	ensure_installed = {'html', 'css', 'vim', 'lua', 'go', 'java', 'javascript'},
 	highlight = {
@@ -30,7 +31,19 @@ require('nvim-treesitter.configs').setup {
 	}
 }
 
-require('lspconfig').gopls.setup{}
+-- Async linter (code prompts)
+local golang_setup ={
+	on_attach = function(client, bufnr)
+		require('lsp_signature').on_attach({
+			bind = true,
+			handler_opts = {
+				border = "rounded"
+			}
+		}, bufnr)
+	end
+}
+
+require('lspconfig').gopls.setup(golang_setup)
 
 diagnostic_config = {
     underline = true,
