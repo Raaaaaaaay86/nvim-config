@@ -26,8 +26,13 @@ return require('packer').startup(function(use)
 	use 'hrsh7th/cmp-vsnip'
 	use 'hrsh7th/vim-vsnip'
 	-- Git gutters
-	use 'lewis6991/gitsigns.nvim'
-
+	use {
+		'lewis6991/gitsigns.nvim',
+		config = function()
+			require('gitsigns').setup()
+		end
+	}
+	-- File Finder
 	use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
 	  requires = { {'nvim-lua/plenary.nvim'} }
