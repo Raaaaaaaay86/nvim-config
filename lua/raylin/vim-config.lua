@@ -19,6 +19,12 @@ vim.keymap.set("n", "<C-p>", string.format(":Files %s<CR>", string.match(vim.fn.
 vim.keymap.set("n", "<leader>e", "<cmd>:NERDTreeToggle<CR>")
 vim.keymap.set("n", "gD", "<cmd>:lua require('raylin.util').GoToImplementation()<CR>")
 
+local telescopePlugin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', telescopePlugin.find_files, {})
+vim.keymap.set('n', '<leader>fg', telescopePlugin.live_grep, {})
+vim.keymap.set('n', '<leader>fb', telescopePlugin.buffers, {})
+vim.keymap.set('n', '<leader>fh', telescopePlugin.help_tags, {})
+
 -- Syntax Highlight
 require('nvim-treesitter.configs').setup {
 	ensure_installed = {'html', 'css', 'vim', 'lua', 'go', 'java', 'javascript'},
@@ -27,7 +33,6 @@ require('nvim-treesitter.configs').setup {
 		additional_vim_regex_highlighting = false
 	}
 }
-
 
 diagnostic_config = {
     underline = true,

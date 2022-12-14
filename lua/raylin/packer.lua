@@ -28,6 +28,9 @@ return require('packer').startup(function(use)
 	-- Git gutters
 	use 'lewis6991/gitsigns.nvim'
 
- 	use 'junegunn/fzf.vim'
+	use {
+	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
+	  requires = { {'nvim-lua/plenary.nvim'} }
+	}
 end)
 
