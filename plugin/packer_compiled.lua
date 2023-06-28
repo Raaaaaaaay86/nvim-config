@@ -121,6 +121,11 @@ _G.packer_plugins = {
     path = "/Users/linjiafu/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/Users/linjiafu/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   ["lspkind-nvim"] = {
     loaded = true,
     path = "/Users/linjiafu/.local/share/nvim/site/pack/packer/start/lspkind-nvim",

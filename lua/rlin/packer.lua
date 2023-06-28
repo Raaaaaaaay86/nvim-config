@@ -11,6 +11,7 @@ return require('packer').startup(function(use)
 	use 'akinsho/toggleterm.nvim'
 	use 'numToStr/Comment.nvim'
 	use 'github/copilot.vim'
+	use 'lewis6991/gitsigns.nvim'
 	use {
 	    'fatih/vim-go',
 	    run = ':GoUpdateBinaries',
