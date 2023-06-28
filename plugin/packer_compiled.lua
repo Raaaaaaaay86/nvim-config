@@ -116,6 +116,11 @@ _G.packer_plugins = {
     path = "/Users/linjiafu/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/Users/linjiafu/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   ["lspkind-nvim"] = {
     loaded = true,
     path = "/Users/linjiafu/.local/share/nvim/site/pack/packer/start/lspkind-nvim",

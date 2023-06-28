@@ -10,6 +10,7 @@ return require('packer').startup(function(use)
 	use "windwp/nvim-autopairs"
 	use 'akinsho/toggleterm.nvim'
 	use 'numToStr/Comment.nvim'
+	use 'github/copilot.vim'
 	use {
 	    'fatih/vim-go',
 	    run = ':GoUpdateBinaries',
